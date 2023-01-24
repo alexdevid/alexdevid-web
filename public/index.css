@@ -1,0 +1,192 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    box-sizing: border-box;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+body {
+    font-family: 'Lucida Console', monospace;
+    font-size: 12px;
+    line-height: 16px;
+    color: #444;
+    background-color: #f9f9f9;
+}
+
+.clear {
+    clear: both;
+}
+h1, h2, h3, h4, h5 {
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+h2 {
+    font-size: 32px;
+    line-height: 30px;
+    margin-bottom: 5px;
+}
+h4 {
+    font-size: 18px;
+}
+h5 {
+    font-size: 14px;
+}
+b {
+    font-weight: 600;
+}
+a {
+    color: #397bd2;
+    text-decoration: none;
+    transition-duration: .5s;
+}
+a:hover {
+    color: #000;
+    text-decoration: none;
+}
+small {
+    font-size: 70%;
+}
+li {
+    padding-bottom: 10px;
+}
+header {
+    height: 5px;
+    margin-bottom: 30px;
+    background-color: #666;
+}
+footer {
+    padding: 25px;
+    background-color: #666;
+    text-align: center;
+    color: #ccc;
+}
+section {
+    width: 100%;
+    padding: 25px 0;
+}
+section .title {
+    padding-right: 25px;
+}
+section .title h4 {
+    color: #1b8480;
+    text-transform: uppercase;
+}
+
+section .content p {
+    margin-bottom: 20px;
+}
+.about ul,
+.about li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.about li {
+    line-height: 20px;
+}
+.about .title {
+    float: left;
+    width: 20%;
+}
+.about .content {
+    float: right;
+    width: 80%;
+}
+.about-name {
+    color: #1b8480;
+    float: left;
+}
+.about-contact {
+    float: right;
+}
+.about-image {
+
+}
+.about-image img {
+    max-width: 100%;
+    display: block;
+}
+
+.experience .job {
+    padding: 20px 0;
+    border-bottom: 1px solid #ccc;
+}
+.experience .job b {
+    display: block;
+}
+.experience .job:last-child {
+    border-bottom: none;
+}
+
+/** xs **/
+@media (max-width: 768px) {
+    main {
+        margin: 0 20px;
+    }
+    .about .content,
+    .about .title {
+        text-align: left;
+        float: none;
+        width: 100%;
+    }
+
+    .about-name {
+        margin-top: 20px;
+    }
+    .about-image img {
+        float: none;
+        display: inline-block;
+    }
+    .about-image, .about-name, .about-contact {
+        float: none;
+        text-align: center;
+    }
+}
+/** sm **/
+@media (min-width: 769px) and (max-width: 1024px) {
+    main {
+        margin: 0 10%;
+    }
+}
+/** md **/
+@media (min-width: 1023px) {
+    main {
+        margin: 0 20%;
+    }
+}
